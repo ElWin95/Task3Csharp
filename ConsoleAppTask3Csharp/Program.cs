@@ -6,43 +6,24 @@ namespace ConsoleAppTask3Csharp
     {
         static void Main(string[] args)
         {
-            int len;
-            l1:
-            Console.Write("Telebelerin sayini daxil et: ");
-            if (!int.TryParse(Console.ReadLine(), out len) || len <= 0)
-            {
-                Console.WriteLine("Say duzgun daxil edilmeyib");
-                goto l1;
-            }
-
+            int len = Helper.ReadInt2("Telebelerin sayini daxil et: ", 1, 10);
+ 
             StudentInfo[] students = new StudentInfo[len];
 
             for (int i = 0; i < students.Length; i++)
             {
                 StudentInfo student = new StudentInfo();
 
-                student.name= Helper.ReadString($"{i+1}. Ad: ");
-                student.surname= Helper.ReadString($"{i+1}. Soyad: ");
+                student.name = Helper.ReadString($"{i + 1}. Ad: ");
+                student.surname = Helper.ReadString($"{i + 1}. Soyad: ");
+                student.age = Helper.ReadInt1($"{i + 1}. Yasi: ", 17, 40);
+                student.speciality = Helper.ReadString($"{i + 1}. Ixtisasi: ");
+                student.groupNo = Helper.ReadString($"{i + 1}. Qrup nomresi: ");
 
-                Console.Write($"{i + 1}. Soyadd: ");
-                student.surname = Console.ReadLine();
-                int age;
-            l2:
-                Console.Write($"{i + 1}. Yas: ");
-                string strAge = Console.ReadLine();
-                if (!int.TryParse(strAge, out age) || age < 17)
-                {
-                    Console.WriteLine($"{strAge} uygun yas deyil!");
-                    goto l2;
-                }
-                Console.Write($"{i + 1}. Ixtisas: ");
-                student.speciality = Console.ReadLine();
-                Console.Write($"{i + 1}. Qrup nomresi: ");
-                student.groupNo = Console.ReadLine();
                 students[i] = student;
             }
 
-            Console.WriteLine("===========================");
+            Console.WriteLine("=======================================");
            
             for (int i = 0; i < students.Length; i++)
             {
