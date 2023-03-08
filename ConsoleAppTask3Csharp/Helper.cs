@@ -10,8 +10,11 @@ namespace ConsoleAppTask3Csharp
     {
         static public string ReadString(string question)
         {
+            ConsoleColor defaultColor = Console.ForegroundColor;
         l1:
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write(question);
+            Console.ForegroundColor = defaultColor;
             string value = Console.ReadLine();
             if (string.IsNullOrEmpty(value))
             {
@@ -21,50 +24,63 @@ namespace ConsoleAppTask3Csharp
         }
         static public int ReadInt1(string question, int min, int max) 
         {
+            ConsoleColor defaultColor = Console.ForegroundColor;
             int value;
         l1:
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write(question);
+            Console.ForegroundColor = defaultColor;
             string valueStr = Console.ReadLine();
 
             if (!int.TryParse(valueStr, out value))
             {
-                Console.WriteLine($"{valueStr} uygun yas deyil!");
+                PrintError($"{valueStr} uygun yas deyil!");
                 goto l1;
             }
 
             if(min != 0 && value < min)
             {
-                Console.WriteLine($"{value} minimal {min} qebul edile biler!");
+                PrintError($"{value} minimal {min} qebul edile biler!");
                 goto l1;
             }
             if (max != 0 && value > max)
             {
-                Console.WriteLine($"{value} maksimal {max} qebul edile biler!");
+                PrintError($"{value} maksimal {max} qebul edile biler!");
                 goto l1;
             }
             return value;
         }   
         static public int ReadInt2(string question, int min, int max) 
         {
+            ConsoleColor defaultColor = Console.ForegroundColor;
             int value;
         l1:
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Telebelerin sayini daxil et: ");
+            Console.ForegroundColor = defaultColor;
             if (!int.TryParse(Console.ReadLine(), out value))
             {
-                Console.WriteLine("Say duzgun daxil edilmeyib");
+                PrintError("Say duzgun daxil edilmeyib");
                 goto l1;
             }
             if (min != 0 && value < min)
             {
-                Console.WriteLine($"{value} minimal {min} qebul edile biler!");
+                PrintError($"{value} minimal {min} qebul edile biler!");
                 goto l1;
             }
             if (max != 0 && value > max)
             {
-                Console.WriteLine($"{value} maksimal {max} qebul edile biler!");
+                PrintError($"{value} maksimal {max} qebul edile biler!");
                 goto l1;
             }
             return value;
+        }
+        static void PrintError(string errorMessage)
+        {
+            ConsoleColor defaultColor = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(errorMessage);
+            Console.ForegroundColor = defaultColor;
         }
     }
 }

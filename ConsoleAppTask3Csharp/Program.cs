@@ -30,16 +30,6 @@ namespace ConsoleAppTask3Csharp
                 Console.Write($"{i + 1}. ");
                 Console.WriteLine(students[i]);
             }
-
-            //StudentInfo student1 = new StudentInfo();
-            //student1.name = "Elvin";
-            //student1.surname = "Mustafayev";
-            //student1.age = 28;
-            //student1.speciality = "Fizik";
-            //student1.groupNo = "Fz34";
-
-            //Console.WriteLine(student1);
-            //Console.WriteLine(student2);
         }
     }
 }
