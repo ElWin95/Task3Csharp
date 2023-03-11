@@ -1,0 +1,15 @@
+C:\Users\emust\Documents\ElvinP416\Task3Csharp\Task3Csharp\bin\Debug\net6.0\Task3Csharp.exe
+C:\Users\emust\Documents\ElvinP416\Task3Csharp\Task3Csharp\bin\Debug\net6.0\Task3Csharp.deps.json
+C:\Users\emust\Documents\ElvinP416\Task3Csharp\Task3Csharp\bin\Debug\net6.0\Task3Csharp.runtimeconfig.json
+C:\Users\emust\Documents\ElvinP416\Task3Csharp\Task3Csharp\bin\Debug\net6.0\Task3Csharp.dll
+C:\Users\emust\Documents\ElvinP416\Task3Csharp\Task3Csharp\bin\Debug\net6.0\Task3Csharp.pdb
+C:\Users\emust\Documents\ElvinP416\Task3Csharp\Task3Csharp\obj\Debug\net6.0\Task3Csharp.csproj.AssemblyReference.cache
+C:\Users\emust\Documents\ElvinP416\Task3Csharp\Task3Csharp\obj\Debug\net6.0\Task3Csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emust\Documents\ElvinP416\Task3Csharp\Task3Csharp\obj\Debug\net6.0\Task3Csharp.AssemblyInfoInputs.cache
+C:\Users\emust\Documents\ElvinP416\Task3Csharp\Task3Csharp\obj\Debug\net6.0\Task3Csharp.AssemblyInfo.cs
+C:\Users\emust\Documents\ElvinP416\Task3Csharp\Task3Csharp\obj\Debug\net6.0\Task3Csharp.csproj.CoreCompileInputs.cache
+C:\Users\emust\Documents\ElvinP416\Task3Csharp\Task3Csharp\obj\Debug\net6.0\Task3Csharp.dll
+C:\Users\emust\Documents\ElvinP416\Task3Csharp\Task3Csharp\obj\Debug\net6.0\refint\Task3Csharp.dll
+C:\Users\emust\Documents\ElvinP416\Task3Csharp\Task3Csharp\obj\Debug\net6.0\Task3Csharp.pdb
+C:\Users\emust\Documents\ElvinP416\Task3Csharp\Task3Csharp\obj\Debug\net6.0\Task3Csharp.genruntimeconfig.cache
+C:\Users\emust\Documents\ElvinP416\Task3Csharp\Task3Csharp\obj\Debug\net6.0\ref\Task3Csharp.dll
